@@ -41,6 +41,16 @@ pip install multilingual-profanity
 
 ## Usage ⌨️
 
+Here's a simple example of how to use the `ProfanityFilter` class:
+
+```python
+from multilingual_profanity import ProfanityFilter
+
+pf = ProfanityFilter("nl")
+print(pf.is_clean("fiets")) # Output: True
+print(pf.is_clean("kanker")) # Output: False
+```
+
 ## Citation ✍️
 <!-- Be sure to adjust everything here so it matches your name and repo -->
 If you use this project in your research, please cite as follows:

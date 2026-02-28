@@ -3,7 +3,7 @@ from importlib import resources
 
 import pyarrow.parquet as pq
 
-from constants import SUPPORTED_LANGUAGES
+from .constants import SUPPORTED_LANGUAGES
 
 
 class ProfanityFilter:
@@ -16,8 +16,10 @@ class ProfanityFilter:
 
         # Dynamically locate the parquet file inside the installed package
         try:
-            # Looks inside src/data/profanity.parquet
-            self.parquet_path = resources.files("data").joinpath("profanity.parquet")
+            # Looks inside src/multilingual_profanity/data/profanity.parquet
+            self.parquet_path = resources.files("multilingual_profanity.data").joinpath(
+                "profanity.parquet"
+            )
         except Exception as e:
             logging.error(f"Could not locate bundled data package: {e}")
             self.parquet_path = None

@@ -5,7 +5,7 @@ from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from src import ProfanityFilter
+from src.multilingual_profanity import ProfanityFilter
 
 
 class TestProfanityFilter(unittest.TestCase):
