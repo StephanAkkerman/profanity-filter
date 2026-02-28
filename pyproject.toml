@@ -4,22 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multilingual-profanity"
-version = "0.1.0"
+version = "0.1.1"
 description = "A fast, memory-efficient multilingual profanity filter using Parquet."
 readme = "README.md"
 authors = [
     { name = "Stephan Akkerman", email = "stephan@akkerman.ai" }
 ]
-license = { text = "MIT" }
+license = "MIT"
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Text Processing :: Linguistic",
 ]
 dependencies = [
-    "pyarrow>=10.0.0",
+    "pyarrow>=23.0.1",
 ]
 
 [project.urls]
