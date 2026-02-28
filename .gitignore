@@ -1,3 +1,6 @@
+**/raw_txts/
+builder.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

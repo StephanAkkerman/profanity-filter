@@ -1,45 +1,42 @@
-# Template
+# Multilingual Profanity Filter
 
 <!-- Add a banner here like: https://github.com/StephanAkkerman/fintwit-bot/blob/main/img/logo/fintwit-banner.png -->
 
 ---
 <!-- Adjust the link of the first and second badges to your own repo -->
 <p align="center">
-  <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/StephanAkkerman/template/pyversions.yml?label=python%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13&logo=python&style=flat-square">
-  <img src="https://img.shields.io/github/license/StephanAkkerman/template.svg?color=brightgreen" alt="License">
+  <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/StephanAkkerman/profanity-filter/pyversions.yml?label=python%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13&logo=python&style=flat-square">
+  <img src="https://img.shields.io/github/license/StephanAkkerman/profanity-filter.svg?color=brightgreen" alt="License">
   <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
 </p>
 
 ## Introduction
 
-In this section you can provide a brief introduction to the project. You can also include a brief description of the project and its features.
+This project provides a profanity filter that supports multiple languages. It is designed to be easy to use and integrate into various applications. The filter uses a comprehensive list of profane words for each supported language, allowing it to effectively identify and filter out inappropriate content.
+
+It uses the [List of Dirty, Naughty, Obscene, and Otherwise Bad Words](https://github.com/LDNOOBWV2/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words_V2) as its primary source for profane words, which is a widely used repository of such words in multiple languages.
 
 ## Table of Contents 🗂
 
-- [Key Features](#key-features)
+- [Supported Languages 🌐](#supported-languages-)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Citation](#citation)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Key Features 🔑
+## Supported Languages 🌐
 
-This section is optional. If your project has a lot of features, consider adding a list of key features here.
+The profanity filter currently supports the same languages as the LDNOOBWV2 repository, you can find it [here](https://github.com/LDNOOBWV2/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words_V2?tab=readme-ov-file#languages-files-overview).
+
 
 ## Installation ⚙️
 <!-- Adjust the link of the second command to your own repo -->
 
-The required packages to run this code can be found in the requirements.txt file. To run this file, execute the following code block after cloning the repository:
+This package is available on PyPI, so you can install it using pip:
 
 ```bash
-pip install -r requirements.txt
-```
-
-or
-
-```bash
-pip install git+https://github.com/StephanAkkerman/template.git
+pip install multilingual-profanity
 ```
 
 ## Usage ⌨️
@@ -49,20 +46,20 @@ pip install git+https://github.com/StephanAkkerman/template.git
 If you use this project in your research, please cite as follows:
 
 ```bibtex
-@misc{project_name,
+@misc{profanity_filter,
   author  = {Stephan Akkerman},
-  title   = {Project Name},
-  year    = {2024},
+  title   = {Profanity Filter},
+  year    = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/StephanAkkerman/template}}
+  howpublished = {\url{https://github.com/StephanAkkerman/profanity-filter}}
 }
 ```
 
 ## Contributing 🛠
 <!-- Be sure to adjust the repo name here for both the URL and GitHub link -->
 Contributions are welcome! If you have a feature request, bug report, or proposal for code refactoring, please feel free to open an issue on GitHub. We appreciate your help in improving this project.\
-![https://github.com/StephanAkkerman/template/graphs/contributors](https://contributors-img.firebaseapp.com/image?repo=StephanAkkerman/template)
+![https://github.com/StephanAkkerman/profanity-filter/graphs/contributors](https://contributors-img.firebaseapp.com/image?repo=StephanAkkerman/profanity-filter)
 
 ## License 📜
 

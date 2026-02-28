@@ -1,14 +1,34 @@
-[tool.isort]
-multi_line_output = 3
-include_trailing_comma = true
-force_grid_wrap = 0
-line_length = 88
-profile = "black"
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
-[tool.ruff]
-line-length = 88
-#select = ["I001"]
+[project]
+name = "multilingual-profanity"
+version = "0.1.0"
+description = "A fast, memory-efficient multilingual profanity filter using Parquet."
+readme = "README.md"
+authors = [
+    { name = "Stephan Akkerman", email = "stephan@akkerman.ai" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "pyarrow>=10.0.0",
+]
 
-[tool.ruff.lint.pydocstyle]
-# Use Google-style docstrings.
-convention = "numpy"
+[project.urls]
+Homepage = "https://github.com/StephanAkkerman/multilingual-profanity"
+Issues = "https://github.com/StephanAkkerman/multilingual-profanity/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ✨ Crucial: This ensures your Parquet file is shipped with the code
+[tool.setuptools.package-data]
+"multilingual_profanity" = ["data/*.parquet"]
